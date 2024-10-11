@@ -13,11 +13,11 @@ public partial class MainMenu : Control
 	[Export]
 	Button exitButton;
 
-	[Export]
-	PackedScene gameScene;
+    [Export]
+    PackedScene gameScene;
 
-	[Export]
-	PackedScene creditsScene;
+    [Export]
+    PackedScene creditsScene;
 
 
 
@@ -26,25 +26,25 @@ public partial class MainMenu : Control
 		Debug.Assert(newGameButton != null, "newGameButton != null");
 		Debug.Assert(creditsButton != null, "creditsButton != null");
 		Debug.Assert(exitButton != null, "exitButton != null");
-		Debug.Assert(creditsScene != null, "creditsScene != null");
+        Debug.Assert(creditsScene != null, "creditsScene != null");
 
-		newGameButton.ButtonDown += NewGameButton_ButtonDown;
-		creditsButton.ButtonDown += CreditsButton_ButtonDown;
-		exitButton.ButtonDown += ExitButton_ButtonDown;
+        newGameButton.ButtonDown += NewGameButton_ButtonDown;
+        creditsButton.ButtonDown += CreditsButton_ButtonDown;
+        exitButton.ButtonDown += ExitButton_ButtonDown;
 	}
 
-	private void ExitButton_ButtonDown()
-	{
-		GetTree().Quit();
-	}
+    private void ExitButton_ButtonDown()
+    {
+        GetTree().Quit();
+    }
 
-	private void CreditsButton_ButtonDown()
-	{
-		GetTree().ChangeSceneToPacked(creditsScene);
-	}
+    private void CreditsButton_ButtonDown()
+    {
+        GetTree().ChangeSceneToPacked(creditsScene);
+    }
 
-	private void NewGameButton_ButtonDown()
-	{
-		GetTree().ChangeSceneToPacked(gameScene);
-	}
+    private void NewGameButton_ButtonDown()
+    {
+        GetTree().ChangeSceneToPacked(gameScene);
+    }
 }
