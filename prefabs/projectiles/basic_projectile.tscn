@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cb4yg5hems8kv"]
+[gd_scene load_steps=5 format=3]
 
 [ext_resource type="Texture2D" uid="uid://d3prx8qvd4gbj" path="res://graphics/misc/bullet.png" id="1_4qbqh"]
 [ext_resource type="Script" path="res://scripts/Projectile.cs" id="2_fiwf5"]
-[ext_resource type="PackedScene" uid="uid://4lfttso23yh3" path="res://prefabs/particles/bullet_impact_fx.tscn" id="3_8elth"]
+[ext_resource type="PackedScene" uid="uid://oykkag5vp113" path="res://prefabs/particles/bullet_impact_fx.tscn" id="3_8elth"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2kj4j"]
 radius = 96.92
