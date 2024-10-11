@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://6lupj643n3vf"]
+[gd_scene load_steps=6 format=3]
 
 [ext_resource type="Script" path="res://scripts/Weapon.cs" id="1_li8oi"]
-[ext_resource type="PackedScene" uid="uid://cb4yg5hems8kv" path="res://prefabs/projectiles/basic_projectile.tscn" id="2_3rkjd"]
+[ext_resource type="PackedScene" uid="uid://c44xix01fcjgs" path="res://prefabs/projectiles/basic_projectile.tscn" id="2_3rkjd"]
 [ext_resource type="PackedScene" uid="uid://b5pofdyf4c7tc" path="res://prefabs/particles/basic_weapon_fire_particles.tscn" id="2_o0ly3"]
 [ext_resource type="AudioStream" uid="uid://c6hffa0dyfyey" path="res://sfx/cannon_shot.wav" id="4_e1m1x"]
 [ext_resource type="Texture2D" uid="uid://d3qgj12u0peq5" path="res://graphics/misc/gun.png" id="5_d6oxw"]

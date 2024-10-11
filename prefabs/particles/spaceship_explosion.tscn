@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cfmjmlyym3yps"]
+[gd_scene load_steps=8 format=3]
 
 [ext_resource type="Texture2D" uid="uid://d3prx8qvd4gbj" path="res://graphics/misc/bullet.png" id="1_xv6gh"]
 [ext_resource type="Script" path="res://scripts/AfterFreeGFX.cs" id="2_n6eyh"]
@@ -19,21 +19,23 @@ curve = SubResource("Curve_6qdeu")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_cm6xv"]
 lifetime_randomness = 1.0
-particle_flag_disable_z = true
 emission_shape = 6
 emission_ring_axis = Vector3(0, 0, 1)
 emission_ring_height = 1.0
 emission_ring_radius = 1.0
 emission_ring_inner_radius = 0.0
-angle_max = 436.4
+particle_flag_disable_z = true
 direction = Vector3(0, 0, 0)
 spread = 180.0
+gravity = Vector3(10000, 0, 0)
 initial_velocity_min = 900.0
 initial_velocity_max = 1000.0
 angular_velocity_max = 32.48
-gravity = Vector3(10000, 0, 0)
+orbit_velocity_min = 0.0
+orbit_velocity_max = 0.0
 linear_accel_min = 100.0
 linear_accel_max = 100.0
+angle_max = 436.4
 scale_max = 3.0
 scale_curve = SubResource("CurveTexture_n20du")
 color_ramp = SubResource("GradientTexture1D_w30qo")
