@@ -1,18 +1,18 @@
-[gd_scene load_steps=9 format=3]
+[gd_scene load_steps=9 format=3 uid="uid://km7u30g786ir"]
 
 [ext_resource type="Script" path="res://scripts/Spaceship.cs" id="1_muf4f"]
-[ext_resource type="PackedScene" path="res://prefabs/engines/main_engine.tscn" id="2_8dcbq"]
-[ext_resource type="PackedScene" path="res://prefabs/particles/spaceship_explosion.tscn" id="2_neakm"]
-[ext_resource type="PackedScene" uid="uid://cd078lehxxjwg" path="res://prefabs/engines/direction_engine.tscn" id="3_aavcb"]
-[ext_resource type="PackedScene" path="res://prefabs/after_free_sfx/spaceship_explosion.tscn" id="3_f8pu3"]
-[ext_resource type="PackedScene" path="res://prefabs/weapons/basic_weapon.tscn" id="4_x26ij"]
+[ext_resource type="PackedScene" uid="uid://c83od431egvlv" path="res://prefabs/engines/main_engine.tscn" id="2_8dcbq"]
+[ext_resource type="PackedScene" uid="uid://cfmjmlyym3yps" path="res://prefabs/particles/spaceship_explosion.tscn" id="2_neakm"]
+[ext_resource type="PackedScene" uid="uid://cddllj43t6hc2" path="res://prefabs/engines/direction_engine.tscn" id="3_aavcb"]
+[ext_resource type="PackedScene" uid="uid://cgrjgp64fv875" path="res://prefabs/after_free_sfx/spaceship_explosion.tscn" id="3_f8pu3"]
+[ext_resource type="PackedScene" uid="uid://6lupj643n3vf" path="res://prefabs/weapons/basic_weapon.tscn" id="4_x26ij"]
 [ext_resource type="AudioStream" uid="uid://bb2wyoricw5xu" path="res://sfx/impact.wav" id="8_o1er7"]
 [ext_resource type="Texture2D" uid="uid://bix44rqajo860" path="res://graphics/spaceships/sp001_nova_star.png" id="9_hnuiw"]
 
 [node name="BasicSpaceship" type="RigidBody2D" node_paths=PackedStringArray("_impactSfx")]
 mass = 98.91
-center_of_mass_mode = 1
 gravity_scale = 0.0
+center_of_mass_mode = 1
 script = ExtResource("1_muf4f")
 _maxHealth = 50
 _impactSfx = NodePath("AudioStreamPlayer2D")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=3 format=3 uid="uid://cddllj43t6hc2"]
 
 [ext_resource type="Script" path="res://scripts/Engine.cs" id="1_kvlfv"]
 [ext_resource type="PackedScene" uid="uid://bskjse1gq38w6" path="res://prefabs/particles/direction_engine_thrust.tscn" id="2_esb60"]
