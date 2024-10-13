@@ -9,15 +9,15 @@
 [ext_resource type="AudioStream" uid="uid://bb2wyoricw5xu" path="res://sfx/impact.wav" id="8_o1er7"]
 [ext_resource type="Texture2D" uid="uid://bix44rqajo860" path="res://graphics/spaceships/sp001_nova_star.png" id="9_hnuiw"]
 
-[node name="BasicSpaceship" type="RigidBody2D" node_paths=PackedStringArray("_impactSfx")]
+[node name="BasicSpaceship" type="RigidBody2D" node_paths=PackedStringArray("_碰撞音效")]
 mass = 98.91
 gravity_scale = 0.0
 center_of_mass_mode = 1
 script = ExtResource("1_muf4f")
-_maxHealth = 50
-_impactSfx = NodePath("AudioStreamPlayer2D")
-_spaceshipExplositionFX = ExtResource("2_neakm")
-_spaceshipExplostionSfx = ExtResource("3_f8pu3")
+_最大生命值 = 50
+_碰撞音效 = NodePath("AudioStreamPlayer2D")
+_飞船爆炸特效 = ExtResource("2_neakm")
+_飞船爆炸音效 = ExtResource("3_f8pu3")
 
 [node name="Engines" type="Node2D" parent="."]
 

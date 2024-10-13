@@ -9,15 +9,15 @@
 [ext_resource type="Texture2D" uid="uid://du1fu0sgfko4t" path="res://graphics/spaceships/sp008_eclipse.png" id="8_ampod"]
 [ext_resource type="AudioStream" uid="uid://bb2wyoricw5xu" path="res://sfx/impact.wav" id="9_88dp4"]
 
-[node name="Spaceship ID001" type="RigidBody2D" node_paths=PackedStringArray("_impactSfx")]
+[node name="Spaceship ID001" type="RigidBody2D" node_paths=PackedStringArray("_碰撞音效")]
 mass = 70.0
 gravity_scale = 0.0
 center_of_mass_mode = 1
 script = ExtResource("1_6ugbi")
-_maxHealth = 1
-_impactSfx = NodePath("AudioStreamPlayer2D")
-_spaceshipExplositionFX = ExtResource("2_ah7r1")
-_spaceshipExplostionSfx = ExtResource("3_lmhso")
+_最大生命值 = 1
+_碰撞音效 = NodePath("AudioStreamPlayer2D")
+_飞船爆炸特效 = ExtResource("2_ah7r1")
+_飞船爆炸音效 = ExtResource("3_lmhso")
 
 [node name="Engines" type="Node2D" parent="."]
 

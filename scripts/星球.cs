@@ -12,7 +12,7 @@ namespace SystemOverride
 		public string Description { get; private set; }
 
         [Export]
-		public int MaxHealth { get; private set; }
+		public int 最大生命值 { get; private set; }
 
 		[Export]
 		float _orbitFrequency;
@@ -35,7 +35,7 @@ namespace SystemOverride
 			_gravity = GetNode <Gravity>("/root/Gravity");
 			_gravity.RegisterGravityPoint(this, _gravityForce);
 
-			Health = MaxHealth;
+			Health = 最大生命值;
 
 			const int circleLineCount = 512;
 
