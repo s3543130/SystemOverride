@@ -1,18 +1,18 @@
-[gd_scene load_steps=9 format=3]
+[gd_scene load_steps=9 format=3 uid="uid://diavspr0v8a2r"]
 
 [ext_resource type="Script" path="res://scripts/Spaceship.cs" id="1_6ugbi"]
 [ext_resource type="PackedScene" path="res://prefabs/particles/spaceship_explosion.tscn" id="2_ah7r1"]
 [ext_resource type="PackedScene" path="res://prefabs/after_free_sfx/spaceship_explosion.tscn" id="3_lmhso"]
 [ext_resource type="PackedScene" path="res://prefabs/engines/main_engine.tscn" id="4_y3xnj"]
-[ext_resource type="PackedScene" uid="uid://cd078lehxxjwg" path="res://prefabs/engines/direction_engine.tscn" id="5_x0g3m"]
-[ext_resource type="PackedScene" path="res://prefabs/weapons/basic_weapon.tscn" id="6_fjf7l"]
+[ext_resource type="PackedScene" path="res://prefabs/engines/direction_engine.tscn" id="5_x0g3m"]
+[ext_resource type="PackedScene" uid="uid://c84d702viy5j1" path="res://prefabs/weapons/basic_weapon.tscn" id="6_fjf7l"]
 [ext_resource type="Texture2D" uid="uid://du1fu0sgfko4t" path="res://graphics/spaceships/sp008_eclipse.png" id="8_ampod"]
 [ext_resource type="AudioStream" uid="uid://bb2wyoricw5xu" path="res://sfx/impact.wav" id="9_88dp4"]
 
 [node name="Spaceship ID001" type="RigidBody2D" node_paths=PackedStringArray("_impactSfx")]
 mass = 70.0
-center_of_mass_mode = 1
 gravity_scale = 0.0
+center_of_mass_mode = 1
 script = ExtResource("1_6ugbi")
 _maxHealth = 1
 _impactSfx = NodePath("AudioStreamPlayer2D")

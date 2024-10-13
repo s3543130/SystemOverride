@@ -216,8 +216,8 @@ theme_override_constants/margin_bottom = 20
 layout_mode = 2
 focus_mode = 2
 theme_override_fonts/normal_font = ExtResource("3_qx8po")
-theme_override_fonts/bold_font = ExtResource("4_f4wbg")
 theme_override_fonts/italics_font = ExtResource("5_kg6le")
+theme_override_fonts/bold_font = ExtResource("4_f4wbg")
 bbcode_enabled = true
 text = "
 

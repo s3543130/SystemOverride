@@ -15,6 +15,7 @@ dest_files=["res://.godot/imported/Lato-Regular.ttf-31fa982d815abdbf5f6d3ef1c01f
 Rendering=null
 antialiasing=1
 generate_mipmaps=false
+disable_embedded_bitmaps=true
 multichannel_signed_distance_field=false
 msdf_pixel_range=8
 msdf_size=48
