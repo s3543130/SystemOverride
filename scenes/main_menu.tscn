@@ -79,11 +79,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_6ipri")
-gameScene = ExtResource("2_yn5xv")
-creditsScene = ExtResource("2_788x0")
 newGameButton = NodePath("VBoxContainer/Button")
 creditsButton = NodePath("VBoxContainer/Button3")
 exitButton = NodePath("VBoxContainer/Button4")
+gameScene = ExtResource("2_yn5xv")
+creditsScene = ExtResource("2_788x0")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1

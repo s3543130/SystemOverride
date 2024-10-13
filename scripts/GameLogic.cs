@@ -51,13 +51,13 @@ namespace SystemOverride
 
 		int _currentLabelIndex = 0;
 
-		Gravity _gravity;
+		重力 _gravity;
 
 		float _stopwatchTime = 0.0f;
 
 		public override void _Ready()
 		{
-			_gravity = GetNode<Gravity>("/root/Gravity");
+			_gravity = GetNode<重力>("/root/Gravity");
 			_aiController.AISpaceshipDestroyed += _aiController_AISpaceshipDestroyed;
 			_playerController.PlayerSpaceshipDestroyed += _playerController_PlayerSpaceshipDestroyed;
 			_winningPanelButton.Pressed += _winningPanelButton_Pressed;
@@ -129,12 +129,12 @@ namespace SystemOverride
 			_stopwatchTime += (float)delta;
 			_timerLabel.Text = _stopwatchTime.ToString("000.00");
 
-			if (Input.IsActionJustPressed(InputActions.Exit))
+			if (Input.IsActionJustPressed(输入操作.Exit))
 			{
 				ExitToMainMenu();
 			}
 
-			if (Input.IsActionJustPressed(InputActions.Restart))
+			if (Input.IsActionJustPressed(输入操作.Restart))
 			{
 				RestartGame();
 			}

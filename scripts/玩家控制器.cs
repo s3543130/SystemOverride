@@ -85,8 +85,8 @@ namespace SystemOverride
 			_directionArrow.GlobalPosition = _spaceship.GlobalPosition + _lastSpaceshipDirection * _circleRadius;
 			_directionArrow.LookAt(_directionArrow.GlobalPosition + new Vector2(-_lastSpaceshipDirection.Y, _lastSpaceshipDirection.X));
 
-			float yAxisEffort = Input.GetAxis(InputActions.PositiveThrust, InputActions.NegativeThrust);
-			float xAxisEffort = Input.GetAxis(InputActions.SideThrustLeft, InputActions.SideThrustRight);
+			float yAxisEffort = Input.GetAxis(输入操作.PositiveThrust, 输入操作.NegativeThrust);
+			float xAxisEffort = Input.GetAxis(输入操作.SideThrustLeft, 输入操作.SideThrustRight);
 
 			_spaceship.TargetMovementEffort = new Vector2(xAxisEffort, yAxisEffort);
 
@@ -103,7 +103,7 @@ namespace SystemOverride
 			_shipToCursorLine.AddPoint(_shipToCursorLine.ToLocal(_spaceship.GlobalPosition));
 			_shipToCursorLine.AddPoint(_shipToCursorLine.ToLocal(globalMousePos));
 
-			if (Input.IsActionPressed(InputActions.FireWeapons))
+			if (Input.IsActionPressed(输入操作.FireWeapons))
             {
 				_spaceship.FireWeapons(0);
             }

@@ -61,13 +61,13 @@ namespace SystemOverride
 
         void ProcessZoom(float delta)
         {
-            if (Input.IsActionJustReleased(InputActions.ZoomIn))
+            if (Input.IsActionJustReleased(输入操作.ZoomIn))
             {
                 _newZoom /= _zoomStepFactor;
                 _newZoom = ClampZoom(_newZoom);
             }
 
-            if (Input.IsActionJustReleased(InputActions.ZoomOut))
+            if (Input.IsActionJustReleased(输入操作.ZoomOut))
             {
                 _newZoom *= _zoomStepFactor;
                 _newZoom = ClampZoom(_newZoom);

@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 
 namespace SystemOverride {
-    public partial class HealthBar : Line2D
+    public partial class 生命条 : Line2D
     {
 
         [Export]

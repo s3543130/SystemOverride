@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bus52y5qjsol2" path="res://graphics/misc/arrow.png" id="4_ggwgs"]
 [ext_resource type="PackedScene" path="res://prefabs/health_segment.tscn" id="5_iq4gr"]
 [ext_resource type="Texture2D" uid="uid://d3ypbbcbrxuar" path="res://graphics/app/cursor.png" id="5_pgqo7"]
-[ext_resource type="Script" path="res://scripts/HealthBar.cs" id="5_sp8eu"]
+[ext_resource type="Script" path="res://scripts/Gravity.cs" id="5_sp8eu"]
 [ext_resource type="Texture2D" uid="uid://d0irnmgdw5fps" path="res://graphics/planets/main_planet.png" id="7_hpm0e"]
 [ext_resource type="AudioStream" uid="uid://nx32mrqy200h" path="res://sfx/enemy_destroyed.wav" id="9_gbi1h"]
 [ext_resource type="PackedScene" uid="uid://diavspr0v8a2r" path="res://prefabs/spaceships/enemy_spaceship.tscn" id="9_x7b8i"]
@@ -199,7 +199,7 @@ _cursor = NodePath("../Player Controller/Cursor")
 _minZoom = 0.1
 _maxZoom = 4.0
 
-[node name="HealthBar" type="Line2D" parent="." node_paths=PackedStringArray("_target")]
+[node name="生命条" type="Line2D" parent="." node_paths=PackedStringArray("_target")]
 position = Vector2(-1, -4)
 width = 2.0
 default_color = Color(1, 1, 1, 0.552941)

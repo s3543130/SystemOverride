@@ -79,7 +79,7 @@ namespace SystemOverride
 
 		RandomNumberGenerator _rng = new RandomNumberGenerator();
 
-		Gravity _gravity;
+		重力 _gravity;
 
 		Node2D _enginesRoot;
 		Node2D _weaponsRoot;
@@ -96,7 +96,7 @@ namespace SystemOverride
 
 			_turnPidController = new PID控制器(_turnProporcionalGain, _turnIntegralGain, _turnDerivativeGain, 1.0f, -1.0f);
 
-			_gravity = GetNode<Gravity>("/root/Gravity");
+			_gravity = GetNode<重力>("/root/Gravity");
 			_enginesRoot = GetNode<Node2D>("Engines");
 			_weaponsRoot = GetNode<Node2D>("Weapons");
 			_spaceshipSprite = GetNode<Node2D>("Sprite");
