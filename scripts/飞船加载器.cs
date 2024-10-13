@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class SpaceshipLoader : Node
+public partial class 飞船加载器 : Node
 {
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()

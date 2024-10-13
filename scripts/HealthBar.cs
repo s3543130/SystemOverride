@@ -13,7 +13,7 @@ namespace SystemOverride {
         PackedScene _healthSegment;
 
         [Export]
-        Spaceship _target;
+        飞船 _target;
 
         [Export]
         float _hpPerSegment = 10.0f;

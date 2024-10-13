@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://diavspr0v8a2r"]
 
-[ext_resource type="Script" path="res://scripts/Spaceship.cs" id="1_6ugbi"]
+[ext_resource type="Script" path="res://scripts/飞船.cs" id="1_6ugbi"]
 [ext_resource type="PackedScene" path="res://prefabs/particles/spaceship_explosion.tscn" id="2_ah7r1"]
 [ext_resource type="PackedScene" path="res://prefabs/after_free_sfx/spaceship_explosion.tscn" id="3_lmhso"]
 [ext_resource type="PackedScene" path="res://prefabs/engines/main_engine.tscn" id="4_y3xnj"]

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace SystemOverride
 {
 
-	public partial class Spaceship : RigidBody2D
+	public partial class 飞船 : RigidBody2D
 	{
 		/// <summary>
 		/// Normal bullet takes around 10 hp, when this number runs out the spaceship explodes.
@@ -71,7 +71,7 @@ namespace SystemOverride
 		const float _turnDerivativeGain = 5.0f;
 
 
-		PidController _turnPidController;
+		PID控制器 _turnPidController;
 
 		List<Engine> _engines = new List<Engine>();
 
@@ -94,7 +94,7 @@ namespace SystemOverride
 
 			// Initialize references
 
-			_turnPidController = new PidController(_turnProporcionalGain, _turnIntegralGain, _turnDerivativeGain, 1.0f, -1.0f);
+			_turnPidController = new PID控制器(_turnProporcionalGain, _turnIntegralGain, _turnDerivativeGain, 1.0f, -1.0f);
 
 			_gravity = GetNode<Gravity>("/root/Gravity");
 			_enginesRoot = GetNode<Node2D>("Engines");

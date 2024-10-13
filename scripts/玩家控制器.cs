@@ -3,10 +3,10 @@ using System;
 
 namespace SystemOverride
 {
-	public partial class PlayerController : Node2D
+	public partial class 玩家控制器 : Node2D
 	{
 		[Export]
-		Spaceship _spaceship;
+		飞船 _spaceship;
 
 		[Export]
 		Line2D _shipToCursorLine;
@@ -18,13 +18,13 @@ namespace SystemOverride
 		Sprite2D _cursor;
 
 		[Export]
-		PlayerCamera _playerCamera;
+		玩家摄像机 _playerCamera;
 
 		[Export]
-		SlowMotion _slowMotion;
+		子弹时间 _slowMotion;
 
 		[Export]
-		Planet _mainPlanet;
+		星球 _mainPlanet;
 
 		float _circleRadius = 170.0f;
 

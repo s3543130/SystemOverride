@@ -2,7 +2,7 @@ using Godot;
 using System;
 using System.Diagnostics;
 
-public partial class MainMenu : Control
+public partial class 主菜单 : Control
 {
 	[Export]
 	Button newGameButton;

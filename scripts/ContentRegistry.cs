@@ -6,7 +6,7 @@ namespace SystemOverride
 {
     public partial class ContentRegistry : Node
     {
-        List<Spaceship> spaceships = new List<Spaceship>();
+        List<飞船> spaceships = new List<飞船>();
 
         public void RegisterSpaceship(string pathToJson)
         {

@@ -4,11 +4,11 @@ using System;
 
 namespace SystemOverride
 {
-    public sealed class PidController
+    public sealed class PID控制器
     {
         private double processVariable = 0;
 
-        public PidController(double GainProportional, double GainIntegral, double GainDerivative, double OutputMax, double OutputMin)
+        public PID控制器(double GainProportional, double GainIntegral, double GainDerivative, double OutputMax, double OutputMin)
         {
             this.GainDerivative = GainDerivative;
             this.GainIntegral = GainIntegral;

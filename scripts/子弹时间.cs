@@ -3,7 +3,7 @@ using System;
 
 namespace SystemOverride
 {
-	public partial class SlowMotion : Node
+	public partial class 子弹时间 : Node
 	{
 		float _timeScale = 1.0f;
 

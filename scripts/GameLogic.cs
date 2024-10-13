@@ -26,7 +26,7 @@ namespace SystemOverride
 		Label _timerLabel;
 
 		[Export]
-		PlayerController _playerController;
+		玩家控制器 _playerController;
 
 		[Export]
 		Panel _winningPanel;

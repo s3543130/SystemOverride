@@ -4,9 +4,9 @@
 [ext_resource type="Material" uid="uid://bmbww0e03bttp" path="res://materials/space_clouds_material.tres" id="1_g7563"]
 [ext_resource type="Script" path="res://scripts/GameLogic.cs" id="1_nnyqc"]
 [ext_resource type="PackedScene" uid="uid://b5yrcahd5sttx" path="res://prefabs/spaceships/player_spaceship.tscn" id="2_7v4dp"]
-[ext_resource type="Script" path="res://scripts/PlayerCamera.cs" id="2_qujta"]
-[ext_resource type="Script" path="res://scripts/Planet.cs" id="3_3ytod"]
-[ext_resource type="Script" path="res://scripts/PlayerController.cs" id="4_e1spy"]
+[ext_resource type="Script" path="res://scripts/玩家摄像机.cs" id="2_qujta"]
+[ext_resource type="Script" path="res://scripts/星球.cs" id="3_3ytod"]
+[ext_resource type="Script" path="res://scripts/玩家控制器.cs" id="4_e1spy"]
 [ext_resource type="Texture2D" uid="uid://bus52y5qjsol2" path="res://graphics/misc/arrow.png" id="4_ggwgs"]
 [ext_resource type="PackedScene" path="res://prefabs/health_segment.tscn" id="5_iq4gr"]
 [ext_resource type="Texture2D" uid="uid://d3ypbbcbrxuar" path="res://graphics/app/cursor.png" id="5_pgqo7"]
@@ -24,7 +24,7 @@
 [ext_resource type="StyleBox" uid="uid://creewoy6ba0lf" path="res://styles/main_style.tres" id="19_u12ea"]
 [ext_resource type="FontFile" uid="uid://bhn8v1uric5jl" path="res://fonts/Lato-Bold.ttf" id="19_ulm52"]
 [ext_resource type="AudioStream" uid="uid://n4y7hvqwpolf" path="res://music/determined_pursuit_loop.wav" id="21_tddnj"]
-[ext_resource type="Script" path="res://scripts/SlowMotion.cs" id="22_4dwde"]
+[ext_resource type="Script" path="res://scripts/子弹时间.cs" id="22_4dwde"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ajlgu"]
 shader = ExtResource("1_e0scc")

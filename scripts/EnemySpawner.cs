@@ -10,7 +10,7 @@ namespace SystemOverride
         private PackedScene _enemySpaceship;
 
         [Export]
-        private Spaceship _player;
+        private 飞船 _player;
 
         [Export]
         private float _spawnRadius = 100f; // default spawn radius is 100 units
@@ -45,7 +45,7 @@ namespace SystemOverride
                 Vector2 enemyPos = _player.Position + offset;
 
                 // spawn the enemy spaceship at the calculated position
-                Spaceship enemy = _enemySpaceship.Instantiate<Spaceship>();
+                飞船 enemy = _enemySpaceship.Instantiate<飞船>();
                 enemy.Position = enemyPos;
                 _controller.AddSpaceship(enemy);
             }

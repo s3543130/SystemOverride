@@ -19,12 +19,12 @@ namespace SystemOverride
         Node2D _spaceshipsRoot;
 
         [Export]
-        SlowMotion _slowMotion;
+        子弹时间 _slowMotion;
 
         [Export]
         AudioStreamPlayer _spaceshipDestroyedStreamPlayer;
 
-        List<Spaceship> _spaceships = new List<Spaceship>();
+        List<飞船> _spaceships = new List<飞船>();
 
         public int SpaceshipCount { get {  return _spaceships.Count; } }
 
@@ -37,7 +37,7 @@ namespace SystemOverride
 
             for (int i = 0; i < spaceshipCount; i++)
             {
-                var spaceship = _spaceshipsRoot.GetChild<Spaceship>(i);
+                var spaceship = _spaceshipsRoot.GetChild<飞船>(i);
                 _spaceships.Add(spaceship);
                 spaceship.SwitchToCollisionLayer(2);
             }
@@ -95,7 +95,7 @@ namespace SystemOverride
         /// </summary>
         /// <param name="spaceship">The spaceship to calculate the direction from.</param>
         /// <returns>The normalized direction from the spaceship to the target.</returns>
-        private Vector2 GetDirection(Spaceship spaceship)
+        private Vector2 GetDirection(飞船 spaceship)
         {
             if (IsInstanceValid(_target))
             {
@@ -113,7 +113,7 @@ namespace SystemOverride
         /// <param name="direction">The direction of the target relative to the spaceship.</param>
         /// <returns>The offset of the facing direction of the spaceship relative to the target direction.</returns>
 
-        private float GetFacingDirectionOffset(Spaceship spaceship, Vector2 direction)
+        private float GetFacingDirectionOffset(飞船 spaceship, Vector2 direction)
         {
             const float deviationFactor = 0.2f;
             var randomDeviation = new Vector2((float)GD.RandRange(-1.0, 1.0), (float)GD.RandRange(-1.0, 1.0)) * deviationFactor;
@@ -127,7 +127,7 @@ namespace SystemOverride
         /// </summary>
         /// <param name="spaceship">The spaceship to update.</param>
         /// <param name="facingDirectionOffset">The offset of the facing direction.</param>
-        private void UpdateSpaceship(Spaceship spaceship, float facingDirectionOffset)
+        private void UpdateSpaceship(飞船 spaceship, float facingDirectionOffset)
         {
             spaceship.TurnProcessOffset = facingDirectionOffset;
             spaceship.TargetMovementEffort = Vector2.Up;
@@ -139,7 +139,7 @@ namespace SystemOverride
         /// <param name="spaceship">The spaceship to check and fire weapons for.</param>
         /// <param name="facingDirectionOffset">The offset of the facing direction of the spaceship from the target.</param>
 
-        private void FireIfPossible(Spaceship spaceship, float facingDirectionOffset)
+        private void FireIfPossible(飞船 spaceship, float facingDirectionOffset)
         {
             if (IsInstanceValid(_target))
             {
@@ -151,7 +151,7 @@ namespace SystemOverride
             }
         }
 
-        public void AddSpaceship(Spaceship spaceship)
+        public void AddSpaceship(飞船 spaceship)
         {
             AddChild(spaceship);
             _spaceships.Add(spaceship);

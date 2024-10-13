@@ -3,7 +3,7 @@ using System;
 
 namespace SystemOverride
 {
-	public partial class Projectile : Node2D
+	public partial class 投射物 : Node2D
 	{
 		[ExportGroup("General Settings")]
 
@@ -54,7 +54,7 @@ namespace SystemOverride
 
 		private void _collisionArea_BodyEntered(Node2D body)
 		{
-			if (body is Spaceship spaceship)
+			if (body is 飞船 spaceship)
 			{
 				GpuParticles2D fx = _impactParticlesScene.Instantiate<GpuParticles2D>();
 				GetTree().Root.AddChild(fx);

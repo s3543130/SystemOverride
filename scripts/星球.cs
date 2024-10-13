@@ -3,7 +3,7 @@ using System;
 
 namespace SystemOverride
 {
-	public partial class Planet : Node2D
+	public partial class 星球 : Node2D
 	{
 		[Export]
 		new public string Name { get; private set; }

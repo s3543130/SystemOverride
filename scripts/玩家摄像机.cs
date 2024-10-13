@@ -4,7 +4,7 @@ using static Godot.FastNoiseLite;
 
 namespace SystemOverride
 {
-    public partial class PlayerCamera : Camera2D
+    public partial class 玩家摄像机 : Camera2D
     {
         [Export]
         Node2D _anchor;
