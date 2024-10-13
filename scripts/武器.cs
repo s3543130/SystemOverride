@@ -12,7 +12,7 @@ namespace SystemOverride
 		Secondary,
 	}
 
-	public partial class Weapon : Node2D
+	public partial class 武器 : Node2D
 	{
 		[ExportGroup("General settings")]
 
@@ -65,7 +65,7 @@ namespace SystemOverride
 		[ExportGroup("Assets")]
 
 		/// <summary>
-		/// Projectile that gets spawned when the weapon fires.
+		/// 投射物 that gets spawned when the weapon fires.
 		/// Forward: Negative Y
 		/// </summary>
 		[Export]
@@ -166,7 +166,7 @@ namespace SystemOverride
 
 				_fireParticles.Emitting = true;
 
-				var projectile = _projectileAsset.Instantiate<Projectile>();
+				var projectile = _projectileAsset.Instantiate<投射物>();
 				projectile.GlobalPosition = _barrelEnd.GlobalPosition;
 				projectile.GlobalRotation = GlobalRotation + Mathf.DegToRad(_fireSpreadAngle * (_rng.Randf() - 0.5f));
 				projectile.InitialVelocity = _velocity;
