@@ -75,7 +75,7 @@ namespace SystemOverride
 
 		List<Engine> _engines = new List<Engine>();
 
-		List<Weapon> _weapons = new List<Weapon>();
+		List<武器> _weapons = new List<武器>();
 
 		RandomNumberGenerator _rng = new RandomNumberGenerator();
 
@@ -129,7 +129,7 @@ namespace SystemOverride
 
 			for (int i = 0; i < weaponCount; i++)
 			{
-				var weapon = _weaponsRoot.GetChild<Weapon>(i);
+				var weapon = _weaponsRoot.GetChild<武器>(i);
 				weapon.ScreenShakeRequested += OnScreenShakeRequestedFromWeapons;
 				_weapons.Add(weapon);
 			}
