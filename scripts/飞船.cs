@@ -250,7 +250,8 @@ namespace SystemOverride
             spaceshipExplosionSfx.GlobalPosition = GlobalPosition;
             GetTree().Root.AddChild(spaceshipExplosionSfx);
 
-            /* TODO: Queue free particles */
+            /* TODO: 队列化释放粒子效果 * /
+            // 创建并实例化飞船爆炸粒子效果*/
             GpuParticles2D fx = _spaceshipExplositionFX.Instantiate<GpuParticles2D>();
             AddChild(fx);
 
