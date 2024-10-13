@@ -119,15 +119,15 @@ namespace SystemOverride
 
 		public override void _Ready()
 		{
-			Debug.Assert(_fireIntervalMin <= _fireIntervalMax, "_fireIntervalMin < _fireIntervalMax");
-			Debug.Assert(_fireIntervalMin >= 0.0f, "_fireIntervalMin >= 0.0f");
-			Debug.Assert(_fireIntervalMax >= 0.0f, "_fireIntervalMax >= 0.0f");
-			Debug.Assert(_fireTimer != null, "_fireTimer != null");
-			Debug.Assert(_projectileAsset != null, "_projectileAsset != null");
-			Debug.Assert(_fireSpreadAngle <= 360.0f, "_fireSpreadAngle <= 360.0f");
-			Debug.Assert(_fireParticles != null, "_fireParticles != null");
-			Debug.Assert(_audioStreamPlayer != null, "_audioStreamPlayer != null");
-			Debug.Assert(_barrel != null, "_barrel != null");
+			调试.Assert(_fireIntervalMin <= _fireIntervalMax, "_fireIntervalMin < _fireIntervalMax");
+			调试.Assert(_fireIntervalMin >= 0.0f, "_fireIntervalMin >= 0.0f");
+			调试.Assert(_fireIntervalMax >= 0.0f, "_fireIntervalMax >= 0.0f");
+			调试.Assert(_fireTimer != null, "_fireTimer != null");
+			调试.Assert(_projectileAsset != null, "_projectileAsset != null");
+			调试.Assert(_fireSpreadAngle <= 360.0f, "_fireSpreadAngle <= 360.0f");
+			调试.Assert(_fireParticles != null, "_fireParticles != null");
+			调试.Assert(_audioStreamPlayer != null, "_audioStreamPlayer != null");
+			调试.Assert(_barrel != null, "_barrel != null");
 
 			_recoilBasePosition = _barrel.Position;
 
@@ -190,7 +190,7 @@ namespace SystemOverride
 		/// <param name="layer">Layer index starting from 1.</param>
 		public void SwitchToCollisionLayer(int layer)
 		{
-			Debug.Assert(layer > 0 && layer <= 32, "layer > 1 && layer <= 32");
+			调试.Assert(layer > 0 && layer <= 32, "layer > 1 && layer <= 32");
 			_currentCollisionLayer = layer;
 		}
 	}

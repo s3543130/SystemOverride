@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://5x5pqi8obn4i"]
 
 [ext_resource type="Texture2D" uid="uid://d3prx8qvd4gbj" path="res://graphics/misc/bullet.png" id="1_xv6gh"]
-[ext_resource type="Script" path="res://scripts/AfterFreeGFX.cs" id="2_n6eyh"]
+[ext_resource type="Script" path="res://scripts/自动释放图形效果.cs" id="2_n6eyh"]
 
 [sub_resource type="Gradient" id="Gradient_y4pi6"]
 offsets = PackedFloat32Array(0.0109489, 0.186131, 0.718978, 1)

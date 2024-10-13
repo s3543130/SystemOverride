@@ -28,11 +28,11 @@ namespace SystemOverride
 
 		public int Health { get; private set; }
 
-		private 重力 _gravity;
+		private Gravity _gravity;
 
 		public override void _Ready()
 		{
-			_gravity = GetNode <重力>("/root/Gravity");
+			_gravity = GetNode <Gravity>("/root/Gravity");
 			_gravity.RegisterGravityPoint(this, _gravityForce);
 
 			Health = MaxHealth;

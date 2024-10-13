@@ -1,6 +1,6 @@
 [gd_scene load_steps=21 format=3 uid="uid://blpjfiqcn8wb3"]
 
-[ext_resource type="Script" path="res://scripts/Credits.cs" id="1_c52wj"]
+[ext_resource type="Script" path="res://scripts/致谢.cs" id="1_c52wj"]
 [ext_resource type="Shader" path="res://shaders/tileable.gdshader" id="1_ptc4o"]
 [ext_resource type="Material" uid="uid://bmbww0e03bttp" path="res://materials/space_clouds_material.tres" id="2_a67wc"]
 [ext_resource type="FontFile" uid="uid://bhn8v1uric5jl" path="res://fonts/Lato-Bold.ttf" id="3_fsieh"]
@@ -75,7 +75,7 @@ bg_color = Color(0.0705882, 0.0705882, 0.0705882, 1)
 corner_radius_top_left = 20
 corner_radius_top_right = 20
 
-[node name="credits" type="Control" node_paths=PackedStringArray("_returnToMainMenuButton")]
+[node name="致谢" type="Control" node_paths=PackedStringArray("_returnToMainMenuButton")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

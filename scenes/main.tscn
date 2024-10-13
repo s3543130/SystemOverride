@@ -2,7 +2,7 @@
 
 [ext_resource type="Shader" path="res://shaders/tileable.gdshader" id="1_e0scc"]
 [ext_resource type="Material" uid="uid://bmbww0e03bttp" path="res://materials/space_clouds_material.tres" id="1_g7563"]
-[ext_resource type="Script" path="res://scripts/GameLogic.cs" id="1_nnyqc"]
+[ext_resource type="Script" path="res://scripts/游戏逻辑.cs" id="1_nnyqc"]
 [ext_resource type="PackedScene" uid="uid://b5yrcahd5sttx" path="res://prefabs/spaceships/player_spaceship.tscn" id="2_7v4dp"]
 [ext_resource type="Script" path="res://scripts/玩家摄像机.cs" id="2_qujta"]
 [ext_resource type="Script" path="res://scripts/星球.cs" id="3_3ytod"]
@@ -10,15 +10,15 @@
 [ext_resource type="Texture2D" uid="uid://bus52y5qjsol2" path="res://graphics/misc/arrow.png" id="4_ggwgs"]
 [ext_resource type="PackedScene" path="res://prefabs/health_segment.tscn" id="5_iq4gr"]
 [ext_resource type="Texture2D" uid="uid://d3ypbbcbrxuar" path="res://graphics/app/cursor.png" id="5_pgqo7"]
-[ext_resource type="Script" path="res://scripts/Gravity.cs" id="5_sp8eu"]
+[ext_resource type="Script" path="res://scripts/生命条.cs" id="5_sp8eu"]
 [ext_resource type="Texture2D" uid="uid://d0irnmgdw5fps" path="res://graphics/planets/main_planet.png" id="7_hpm0e"]
 [ext_resource type="AudioStream" uid="uid://nx32mrqy200h" path="res://sfx/enemy_destroyed.wav" id="9_gbi1h"]
 [ext_resource type="PackedScene" uid="uid://diavspr0v8a2r" path="res://prefabs/spaceships/enemy_spaceship.tscn" id="9_x7b8i"]
 [ext_resource type="Texture2D" uid="uid://flvfj45je7hi" path="res://graphics/planets/main_planet_moon3.png" id="10_yvygf"]
-[ext_resource type="Script" path="res://scripts/AIController.cs" id="11_ddh2e"]
+[ext_resource type="Script" path="res://scripts/AI控制器.cs" id="11_ddh2e"]
 [ext_resource type="Texture2D" uid="uid://c5hfbju1ownmp" path="res://graphics/planets/main_planet_moon2.png" id="14_wv56m"]
 [ext_resource type="Texture2D" uid="uid://bds71ls5sv3yf" path="res://graphics/planets/main_planet_moon1.png" id="15_yrpv2"]
-[ext_resource type="Script" path="res://scripts/EnemySpawner.cs" id="17_bdcr7"]
+[ext_resource type="Script" path="res://scripts/敌人生成器.cs" id="17_bdcr7"]
 [ext_resource type="Texture2D" uid="uid://chocqh7k8k0p" path="res://graphics/planets/star.png" id="17_p46rg"]
 [ext_resource type="Shader" path="res://shaders/post_process.gdshader" id="17_w3603"]
 [ext_resource type="StyleBox" uid="uid://creewoy6ba0lf" path="res://styles/main_style.tres" id="19_u12ea"]
@@ -118,7 +118,7 @@ shadow_size = 7
 
 [node name="Main Scene" type="Node2D" node_paths=PackedStringArray("_aiController", "_scoreLabel", "_progressBar", "_timerLabel", "_playerController", "_winningPanel", "_loosingPanel", "_loosingPanelButton", "_winningPanelButton", "_winningPanelLabel")]
 script = ExtResource("1_nnyqc")
-_aiController = NodePath("AIController")
+_aiController = NodePath("AI控制器")
 _mainMenuScenePath = "res://scenes/main_menu.tscn"
 _gameScenePath = "res://scenes/main.tscn"
 _scoreLabel = NodePath("CanvasLayer/ScoreLabel")
@@ -243,16 +243,16 @@ texture = ExtResource("4_ggwgs")
 position = Vector2(-24, -188)
 texture = ExtResource("5_pgqo7")
 
-[node name="AIController" type="Node2D" parent="." node_paths=PackedStringArray("_target", "_spaceshipsRoot", "_slowMotion", "_spaceshipDestroyedStreamPlayer")]
+[node name="AI控制器" type="Node2D" parent="." node_paths=PackedStringArray("_target", "_spaceshipsRoot", "_slowMotion", "_spaceshipDestroyedStreamPlayer")]
 script = ExtResource("11_ddh2e")
 _target = NodePath("../Player Spaceship")
 _spaceshipsRoot = NodePath("Spaceships")
 _slowMotion = NodePath("../SlowMotion")
 _spaceshipDestroyedStreamPlayer = NodePath("AudioStreamPlayer")
 
-[node name="Spaceships" type="Node2D" parent="AIController"]
+[node name="Spaceships" type="Node2D" parent="AI控制器"]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="AIController"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="AI控制器"]
 stream = ExtResource("9_gbi1h")
 max_polyphony = 10
 
@@ -499,7 +499,7 @@ script = ExtResource("17_bdcr7")
 _enemySpaceship = ExtResource("9_x7b8i")
 _player = NodePath("../Player Spaceship")
 _spawnRadius = 30000.0
-_controller = NodePath("../AIController")
+_controller = NodePath("../AI控制器")
 
 [node name="SlowMotion" type="Node" parent="."]
 script = ExtResource("22_4dwde")

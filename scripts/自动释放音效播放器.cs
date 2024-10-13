@@ -7,7 +7,7 @@ namespace SystemOverride
 	/// A class that provides a convenient way to play a sound effect
 	/// and automatically free the associated node from memory after playback is finished.
 	/// </summary>
-	public partial class AfterFreeSfx : AudioStreamPlayer2D
+	public partial class 自动释放音效播放器 : AudioStreamPlayer2D
 	{
 		// Override method called when the node is ready to be used.
 		public override void _Ready()

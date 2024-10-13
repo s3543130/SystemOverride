@@ -3,10 +3,10 @@ using System;
 
 namespace SystemOverride
 {
-	public partial class GameLogic : Node
+	public partial class 游戏逻辑 : Node
 	{
 		[Export]
-		AIController _aiController;
+		AI控制器 _aiController;
 
 		// String to avoid circular dependency
 		[Export(PropertyHint.File)]
@@ -51,13 +51,13 @@ namespace SystemOverride
 
 		int _currentLabelIndex = 0;
 
-		重力 _gravity;
+		Gravity _gravity;
 
 		float _stopwatchTime = 0.0f;
 
 		public override void _Ready()
 		{
-			_gravity = GetNode<重力>("/root/Gravity");
+			_gravity = GetNode<Gravity>("/root/Gravity");
 			_aiController.AISpaceshipDestroyed += _aiController_AISpaceshipDestroyed;
 			_playerController.PlayerSpaceshipDestroyed += _playerController_PlayerSpaceshipDestroyed;
 			_winningPanelButton.Pressed += _winningPanelButton_Pressed;

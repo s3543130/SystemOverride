@@ -22,7 +22,7 @@ namespace SystemOverride
 	}
 
 
-	public partial class Engine : Node2D
+	public partial class 引擎 : Node2D
 	{
 		// Exports
 
@@ -67,8 +67,8 @@ namespace SystemOverride
 		/// <param name="forceFactor">Value between 0.0 to 1.0 specifiing how much thrust to allow from the engine.</param>
 		public void ApplyForceToOwner(飞船 spaceship, float forceFactor)
 		{
-			Debug.Assert(forceFactor >= 0.0f && forceFactor <= 1.0f, "forceFactor >= 0.0f && forceFactor <= 1.0f");
-			Debug.Assert(IsInstanceValid(spaceship), "IsInstanceValid(spaceship)");
+			调试.Assert(forceFactor >= 0.0f && forceFactor <= 1.0f, "forceFactor >= 0.0f && forceFactor <= 1.0f");
+			调试.Assert(IsInstanceValid(spaceship), "IsInstanceValid(spaceship)");
 
 			if (EngineEnabled)
 			{

@@ -33,12 +33,12 @@ namespace SystemOverride
 
 		public override void _Ready()
 		{
-			Debug.Assert(_damage > 0, "_damage > 0");
-			Debug.Assert(_aliveTime > 0, "_aliveTime > 0");
-			Debug.Assert(_velocity > 0, "_velocity > 0");
-			Debug.Assert(_impactParticlesScene != null, "_impactParticlesScene != null");
-			Debug.Assert(_collisionArea != null, "_collisionArea != null");
-			Debug.Assert(_aliveTimer != null, "_aliveTimer != null");
+			调试.Assert(_damage > 0, "_damage > 0");
+			调试.Assert(_aliveTime > 0, "_aliveTime > 0");
+			调试.Assert(_velocity > 0, "_velocity > 0");
+			调试.Assert(_impactParticlesScene != null, "_impactParticlesScene != null");
+			调试.Assert(_collisionArea != null, "_collisionArea != null");
+			调试.Assert(_aliveTimer != null, "_aliveTimer != null");
 
 			_collisionArea.BodyEntered += _collisionArea_BodyEntered;
 

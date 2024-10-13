@@ -54,8 +54,8 @@ namespace SystemOverride
 
 			set
 			{
-				Debug.Assert(value.X <= 1.0f && value.X >= -1.0f, "value.X <= 1.0f && value.X >= -1.0f");
-				Debug.Assert(value.Y <= 1.0f && value.Y >= -1.0f, "value.Y <= 1.0f && value.Y >= -1.0f");
+				调试.Assert(value.X <= 1.0f && value.X >= -1.0f, "value.X <= 1.0f && value.X >= -1.0f");
+				调试.Assert(value.Y <= 1.0f && value.Y >= -1.0f, "value.Y <= 1.0f && value.Y >= -1.0f");
 
 				_targetMovementEffort = value;
 			}
@@ -73,13 +73,13 @@ namespace SystemOverride
 
 		PID控制器 _turnPidController;
 
-		List<Engine> _engines = new List<Engine>();
+		List<引擎> _engines = new List<引擎>();
 
 		List<武器> _weapons = new List<武器>();
 
 		RandomNumberGenerator _rng = new RandomNumberGenerator();
 
-		重力 _gravity;
+		Gravity _gravity;
 
 		Node2D _enginesRoot;
 		Node2D _weaponsRoot;
@@ -90,13 +90,13 @@ namespace SystemOverride
 		public override void _Ready()
 		{
 			// Check exports
-			Debug.Assert(_impactSfx != null, "_impactSfx != null");
+			调试.Assert(_impactSfx != null, "_impactSfx != null");
 
 			// Initialize references
 
 			_turnPidController = new PID控制器(_turnProporcionalGain, _turnIntegralGain, _turnDerivativeGain, 1.0f, -1.0f);
 
-			_gravity = GetNode<重力>("/root/Gravity");
+			_gravity = GetNode<Gravity>("/root/Gravity");
 			_enginesRoot = GetNode<Node2D>("Engines");
 			_weaponsRoot = GetNode<Node2D>("Weapons");
 			_spaceshipSprite = GetNode<Node2D>("Sprite");
@@ -115,11 +115,11 @@ namespace SystemOverride
 			int engineCount = _enginesRoot.GetChildCount();
 
 			// There should be atleast some engines... otherwise it's not really a spaceship anymore.
-			Debug.Assert(engineCount > 0, "engineCount > 0");
+			调试.Assert(engineCount > 0, "engineCount > 0");
 
 			for (int i = 0; i < engineCount; i++)
 			{
-				var engine = _enginesRoot.GetChild<Engine>(i);
+				var engine = _enginesRoot.GetChild<引擎>(i);
 				_engines.Add(engine);
 
 			}
@@ -255,7 +255,7 @@ namespace SystemOverride
 		public void DestroySpaceship()
 		{
 
-			var spaceshipExplosionSfx = _spaceshipExplostionSfx.Instantiate<AfterFreeSfx>();
+			var spaceshipExplosionSfx = _spaceshipExplostionSfx.Instantiate<自动释放音效播放器>();
 			spaceshipExplosionSfx.GlobalPosition = GlobalPosition;
 			GetTree().Root.AddChild(spaceshipExplosionSfx);
 
@@ -282,7 +282,7 @@ namespace SystemOverride
 
 		private void OnDespawn()
 		{
-			var spaceshipExplosionSfx = _spaceshipExplostionSfx.Instantiate<AfterFreeSfx>();
+			var spaceshipExplosionSfx = _spaceshipExplostionSfx.Instantiate<自动释放音效播放器>();
 			spaceshipExplosionSfx.GlobalPosition = GlobalPosition;
 			GetTree().Root.AddChild(spaceshipExplosionSfx);
 

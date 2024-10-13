@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace SystemOverride
 {
-    public partial class AIController : Node2D
+    public partial class AI控制器 : Node2D
     {
         /// <summary>
         /// AI will try to target this point.

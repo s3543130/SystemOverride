@@ -3,7 +3,7 @@ using System;
 
 namespace SystemOverride
 {
-    public enum CollisionLayers
+    public enum 碰撞层
     {
         Player = 1,
         Enemy = 2,

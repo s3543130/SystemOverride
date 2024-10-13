@@ -4,7 +4,7 @@ using System;
 
 namespace SystemOverride
 {
-    internal static class Debug
+    internal static class 调试
     {
         internal static void Assert(bool cond, string msg)
 #if DEBUG

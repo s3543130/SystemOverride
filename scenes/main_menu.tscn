@@ -113,7 +113,7 @@ text = "New Game"
 layout_mode = 2
 theme = ExtResource("5_o8rqm")
 theme_override_styles/normal = ExtResource("7_ko1j2")
-text = "Credits"
+text = "致谢"
 
 [node name="Button4" type="Button" parent="VBoxContainer"]
 layout_mode = 2

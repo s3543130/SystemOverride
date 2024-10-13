@@ -4,7 +4,7 @@ using SystemOverride;
 
 namespace SystemOverride
 {
-    public partial class EnemySpawner : Node2D
+    public partial class 敌人生成器 : Node2D
     {
         [Export]
         private PackedScene _enemySpaceship;
@@ -16,7 +16,7 @@ namespace SystemOverride
         private float _spawnRadius = 100f; // default spawn radius is 100 units
 
         [Export]
-        private AIController _controller;
+        private AI控制器 _controller;
 
         private RandomNumberGenerator _rng = new RandomNumberGenerator();
 

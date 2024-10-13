@@ -6,7 +6,7 @@ namespace SystemOverride
 	/// <summary>
 	/// Checks if the particle system has finished emitting and frees the node if true.
 	/// </summary>
-	public partial class AfterFreeGFX : GpuParticles2D
+	public partial class 自动释放图形效果 : GpuParticles2D
 	{
 		private const bool _emitOnStart = true;
 

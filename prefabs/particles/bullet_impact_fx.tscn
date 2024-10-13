@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://cijvg5ncdxh0d"]
 
 [ext_resource type="Texture2D" uid="uid://dx5surx7f5562" path="res://graphics/misc/light.png" id="1_kpbpu"]
-[ext_resource type="Script" path="res://scripts/AfterFreeGFX.cs" id="2_ch1uw"]
+[ext_resource type="Script" path="res://scripts/自动释放图形效果.cs" id="2_ch1uw"]
 
 [sub_resource type="Gradient" id="Gradient_fpk33"]
 offsets = PackedFloat32Array(0, 0.99435)

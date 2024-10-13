@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace SystemOverride
 {
-    public partial class DebugDraw : MeshInstance2D
+    public partial class 调试绘制 : MeshInstance2D
     {
         private class DebugCross
         {

@@ -2,7 +2,7 @@ using Godot;
 using System;
 
 namespace SystemOverride {
-	public partial class Credits : Node
+	public partial class 致谢 : Node
 	{
 		// String to avoid circular dependency
 		[Export(PropertyHint.File)]
