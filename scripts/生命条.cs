@@ -75,7 +75,7 @@ namespace SystemOverride {
         public override void _Ready()
         {
             CreateHealthBarCircle();
-            Health = _target.生命值;
+            Health = _target.Health;
         }
 
         public override void _Process(double delta)
@@ -83,7 +83,7 @@ namespace SystemOverride {
             if (IsInstanceValid(_target))
             {
                 GlobalPosition = _target.GlobalPosition;
-                Health = _target.生命值;
+                Health = _target.Health;
             }
         }
 
